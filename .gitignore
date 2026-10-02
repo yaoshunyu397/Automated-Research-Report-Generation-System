@@ -1,0 +1,56 @@
+# ===== 密钥与环境配置（切勿提交） =====
+.env
+.env.local
+.env.*.local
+*.env
+!.env.example
+
+# ===== Python 虚拟环境 =====
+.venv/
+venv/
+env/
+ENV/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ===== 运行期数据 =====
+# 默认存储目录由 STORAGE_ROOT 指定（见 .env），项目内 data/ 为历史遗留数据
+data/
+storage/
+backend/*.db
+backend/*.db-shm
+backend/*.db-wal
+*.sqlite
+*.sqlite3
+*.db-shm
+*.db-wal
+
+# ===== 前端 =====
+node_modules/
+frontend/dist/
+frontend/dist-ssr/
+frontend/*.tsbuildinfo
+frontend/vite.config.ts.timestamp-*
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.npm-cache/
+
+# ===== 编辑器与系统 =====
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+*.suo
+*.sw?
+
+# ===== 日志与临时文件 =====
+*.log
+logs/
+*.tmp
